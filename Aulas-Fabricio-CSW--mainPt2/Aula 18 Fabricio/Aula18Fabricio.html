@@ -9,17 +9,47 @@
 </head>
 <body>
     <header>
-        <div class="logo"> <img src="imagens/logo.png" alt="logo">=  <a href="sobre logo"></a></div>
-        <a href="sobre logo"></a>
-        <nav>
-            <a href="#Sobre">Sobre</a>
-        </nav>
-    </header>
-    <main>
-        <section id="sobre">
-        <section id="porto">
-        <section id="galeria">
+        <section id="contato">
+            <div>
+                <img src="Imagens/logo.png" alt="logo da paraty">
+                <nav>
+                    <a href="#Sobre">Sobre</a>
+                    <a href="#pontos">Pontos Turísticos</a>
+                    <a href="#galeria">Galeria</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>
+
+    <h1>Contato</h1>
+    <div>    
+        <span>Login</span>
+        <input id="usuario" type="email">
+        <span>Senha</span>
+        <input id="senha" type="password">
+        <button validar()>Enviar</button>
+        <button>Cancelar</button>
+    </div>
 </section>
-    </main>
+    </header>
+    <script>
+        const adm = "adm@uvv.br"
+        const psw = "admin123"
+
+        function validar() {
+        let usuario = document.getElementById("usuario").value
+        let senha = document.getElementById("senha").value
+        if (usuario == adm && senha == psw) {
+            window.alert("Usuário logado!")
+        }
+        else
+        {
+            window.alert("Usuário inválido. Tente novamente!")
+        }
+    }
+
+    function Cancelar(){
+        
+    }
+    </script>
 </body>
 </html>
